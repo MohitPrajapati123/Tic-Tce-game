@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe Game</title>
+  <link rel="stylesheet" href="game2.css"/>
+</head>
+<body>
+
+<div class="msg-container hide">
+  <p id="msg">Winner</p>
+  <button id="new-btn">New Game</button>
+</div>
+<main>
+  <h1 style="color:rgb(215, 23, 23)">Tic Tac Toe</h1>
+  <div class="scoreboard">
+    <p>Round: <span id="round-count">1</span></p>
+    <p>Player O Wins: <span id="playerO-wins">0</span></p>
+    <p>Player X Wins: <span id="playerX-wins">0</span></p>
+  </div>
+  <div class="container">
+    <div class="game">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+  </div>
+  <audio id="winSound">
+    <source src="mixkit-animated-small-group-applause-523.wav" type="audio/wav">
+  </audio>
+  <audio id="moveSound">
+    <source src="mixkit-game-ball-tap-2073.wav" type="audio/wav">
+  </audio>
+  <audio id="drawSound">
+    <source src="mixkit-game-blood-pop-slide-2363.wav" type="audio/wav">
+  </audio>
+  <button id="reset-btn">Reset Game</button>
+</main>
+    
+<script src="game2.js"></script>
+</body>
+</html>
